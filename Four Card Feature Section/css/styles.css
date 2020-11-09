@@ -1,0 +1,157 @@
+body {
+  background-color: #FAFAFA;
+  margin: 85px auto;
+  font-family: 'Spartan', sans-serif;
+  font-size: 24px;
+  text-align: center;
+  line-height: 1.8;
+  letter-spacing: -.5px;
+  color: #4C4E62;
+  width: 375px;
+}
+
+.artificial {
+  color: #A3A5AF;
+  font-size: 15px;
+  width: 82%;
+  margin: 23px auto;
+  font-weight: 500;
+}
+
+.powered {
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: .6px;
+}
+
+.tools-title {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 27px 0 0 27px;
+}
+
+.tools-subtext {
+  color: #A3A5AF;
+  font-size: 13px;
+  padding: 0 0 0 27px;
+}
+
+.tool-image {
+  position: absolute;
+  bottom: 10px;
+  right: 27px;
+}
+
+.column {
+  text-align: left;
+}
+
+.Supervisor {
+  background: linear-gradient(to bottom,
+      #4ACECF 2%, white 2% 80%);
+  height: 225px;
+  width: 310px;
+  margin: 20px auto 0;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px 2px #D9E1EE;
+  position: relative;
+}
+
+.Team-Builder {
+  background: linear-gradient(to bottom,
+      #E35653 2%, white 2% 80%);
+  height: 225px;
+  width: 310px;
+  margin: 20px auto 0;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px 2px #D9E1EE;
+  position: relative;
+
+}
+
+.Karma {
+  background: linear-gradient(to bottom,
+      #F7B03E 2%, white 2% 80%);
+  height: 225px;
+  width: 310px;
+  margin: 20px auto 0;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px 2px #D9E1EE;
+  position: relative;
+}
+
+.Calculator {
+  background: linear-gradient(to bottom,
+      #5C9EF6 2%, white 2% 80%);
+  height: 225px;
+  width: 310px;
+  margin: 20px auto 0;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px 2px #D9E1EE;
+  position: relative;
+}
+
+.attribution {
+    width: 328px;
+    margin: 50px auto 0;
+    color: black;
+    font-size: 13px;
+    font-weight: 700;
+
+}
+
+@media screen and (min-width: 769px) {
+  body {
+    font-size: 36px;
+    width: 1110px;
+  }
+
+  .artificial {
+    width: 523px;
+  }
+
+  .column {
+    display: grid;
+    grid-row-gap: 15px;
+    grid-column-gap: 32px;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas:
+    ". Team-Builder ."
+    ". Team-Builder ."
+    "Supervisor Team-Builder Calculator"
+    "Supervisor Team-Builder Calculator"
+    "Supervisor Karma Calculator"
+    "Supervisor Karma Calculator"
+    ". Karma ."
+    ". Karma .";
+  }
+
+  .Supervisor {
+    grid-area: Supervisor;
+    width: 350px;
+    height: 250px;
+  }
+
+  .Team-Builder {
+    grid-area: Team-Builder;
+    width: 350px;
+    height: 250px;
+  }
+
+  .Karma {
+    grid-area: Karma;
+    width: 350px;
+    height: 250px;
+  }
+
+  .Calculator {
+    grid-area: Calculator;
+    width: 350px;
+    height: 250px;
+}
+
+.tools-subtext {
+  width: 265px;
+  padding-top: 5px;
+}
+}
